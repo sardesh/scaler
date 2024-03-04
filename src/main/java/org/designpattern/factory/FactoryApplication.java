@@ -9,6 +9,7 @@ public class FactoryApplication {
         //@TODO need to fix this
         // Handlers are singleton and doesn't hold state that's why I need to pass message
         // What can be the best way to fix this use case
+        // As its singlatan handlers can be considered as regestry rather than factory
         MessageHandlerFactory.getMessageHandler(message1).handleMessage(message1);
         MessageHandlerFactory.getMessageHandler(message2).handleMessage(message2);
     }
